@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#HeaderMainMenu {
+  .sub-menu {
+    @apply hidden
+  }
+  .menu-item a {
+    @apply block
+  }
+
+  > .menu {
+    @apply hidden;
+    @apply md:flex;
+    @apply md:flex-wrap;
+    @apply font-semibold;
+    @apply leading-6;
+
+    > .menu-item > a {
+      @apply p-3;
+      @apply pb-[9px];
+      @apply border-b-[3px];
+      @apply border-transparent;
+      @apply hover:border-gray-200
+    }
+  }
+}
+
+.post-content {
+  h1, h2, h3, h4 {
+    @apply dark:text-gray-300;
+    @apply font-medium;
+    @apply mb-3
+  }
+  h2 {
+    @apply text-3xl
+  }
+  h3 {
+    @apply text-2xl
+  }
+  h4 {
+    @apply text-xl
+  }
+  p {
+    @apply mb-3
+  }
+}
